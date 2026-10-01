@@ -445,7 +445,7 @@ export default function Showcase2Client() {
           width: 'min(100vw, calc(100dvh * 16 / 9))',
           aspectRatio: '16 / 9',
           containerType: 'size',
-          backgroundImage: 'url(/showcase/v2-bg.jpg)',
+          backgroundImage: `url(${process.env.NEXT_PUBLIC_BASE_PATH ?? ''}/showcase/v2-bg.jpg)`,
           backgroundSize: 'cover',
           backgroundPosition: 'center',
         }}
